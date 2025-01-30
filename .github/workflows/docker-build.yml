@@ -2,10 +2,9 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "main" ]
-    paths: ["mern/backend"]
-  pull_request:
-    branches: [ "main" ]
+    branches: ["main"]
+    paths:
+      - "mern/backend/**"
 
 jobs:
   build:
