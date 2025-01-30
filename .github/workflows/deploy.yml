@@ -3,7 +3,7 @@ name: Build and Publish image to Docker hub
 on:
   push:
     branches:
-      - main
+      - origin/main
     paths:
       - 'mern/backend/Dockerfile'
       - 'mern/frontend/Dockerfile'
