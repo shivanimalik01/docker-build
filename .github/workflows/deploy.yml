@@ -5,8 +5,8 @@ on:
     branches:
       - main
     paths:
-      - 'mern\backend\Dockerfile'
-      - 'mern\frontend\Dockerfile'
+      - 'mern/backend/Dockerfile'
+      - 'mern/frontend/Dockerfile'
 
 jobs:
   build:
