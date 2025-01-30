@@ -1,12 +1,11 @@
-name: Build and Publish image to Docker hub
+name: Docker Image CI
 
 on:
   push:
-    branches:
-      -  main
-    paths:
-      -  'mern/backend/Dockerfile'
-      -  'mern/frontend/Dockerfile'
+    branches: [ "main" ]
+    paths: ["mern/backend"]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
