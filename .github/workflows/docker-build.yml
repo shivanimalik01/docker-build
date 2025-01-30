@@ -1,8 +1,12 @@
 name: Build and Publish image to Docker hub
 
 on:
-  [workflow_dispatch]
-    
+  push:
+    branches:
+      -  main
+    paths:
+      -  'mern/backend/Dockerfile'
+      -  'mern/frontend/Dockerfile'
 
 jobs:
   build:
